@@ -2,9 +2,6 @@
 <Defs>
 
 
-  <DesignatorDropdownGroupDef>
-      <defName>Broms_LiquidMetalPipesDeconstructDropdown</defName>
-  </DesignatorDropdownGroupDef> 
 
   <PipeSystem.PipeNetDef>
     <defName>VCHEBroms_DeepSteelNet</defName>
@@ -20,7 +17,6 @@
     </pipeDefs>
     <designator>
       <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
-      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -42,7 +38,6 @@
     </pipeDefs>
     <designator>
       <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
-      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -64,7 +59,6 @@
     </pipeDefs>
     <designator>
       <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
-      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -86,7 +80,6 @@
     </pipeDefs>
     <designator>
       <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
-      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -108,7 +101,6 @@
     </pipeDefs>
     <designator>
       <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
-      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -233,6 +225,9 @@
   </ThingDef>
 
 
+  <DesignatorDropdownGroupDef>
+      <defName>Broms_LiquidMetalTankDropdown</defName>
+  </DesignatorDropdownGroupDef>
 
   <ThingDef Name="Broms_LiquidMetalTankParent" ParentName="BuildingBase" Abstract="True">
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -266,6 +261,7 @@
     </costList>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <designatorDropdown>Broms_LiquidMetalTankDropdown</designatorDropdown>
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <canOverlapZones>false</canOverlapZones>

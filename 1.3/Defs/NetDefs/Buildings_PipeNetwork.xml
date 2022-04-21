@@ -134,7 +134,7 @@
 			<li>Steel</li>
 		</items>
 		<outputLimitControlled>true</outputLimitControlled>
-		<maxTotalOutput>300</maxTotalOutput>
+		<maxTotalOutput>75</maxTotalOutput>
 		<amount>
 			<li>32</li>
 		</amount>
@@ -151,7 +151,7 @@
 			<li>Silver</li>
 		</items>
 		<outputLimitControlled>true</outputLimitControlled>
-		<maxTotalOutput>300</maxTotalOutput>
+		<maxTotalOutput>75</maxTotalOutput>
 		<amount>
 			<li>32</li>
 		</amount>
@@ -168,7 +168,7 @@
 			<li>Gold</li>
 		</items>
 		<outputLimitControlled>true</outputLimitControlled>
-		<maxTotalOutput>300</maxTotalOutput>
+		<maxTotalOutput>75</maxTotalOutput>
 		<amount>
 			<li>32</li>
 		</amount>
@@ -185,7 +185,7 @@
 			<li>Uranium</li>
 		</items>
 		<outputLimitControlled>true</outputLimitControlled>
-		<maxTotalOutput>300</maxTotalOutput>
+		<maxTotalOutput>75</maxTotalOutput>
 		<amount>
 			<li>32</li>
 		</amount>
@@ -202,7 +202,7 @@
 			<li>Plasteel</li>
 		</items>
 		<outputLimitControlled>true</outputLimitControlled>
-		<maxTotalOutput>300</maxTotalOutput>
+		<maxTotalOutput>75</maxTotalOutput>
 		<amount>
 			<li>32</li>
 		</amount>
