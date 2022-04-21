@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <VCHEBroms_CantRefine>Can’t refine: Tanks are full</VCHE_CantRefine>
+  <VCHEBroms_CantPump>Can’t drill: Tanks are full</VCHE_CantPump>
+
+  <VCHEBroms_CantPlaceHere>Excavators can only be placed on the deep solid mineral deposits. Use ground-penetrating scanner to find the deposits.</VCHE_CantPlaceHere>
+</LanguageData>

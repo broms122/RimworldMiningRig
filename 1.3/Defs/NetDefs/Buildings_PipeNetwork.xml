@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VCHEBroms_MetalRefinery</defName>
+		<label>liquid metal forge</label>
+		<description>An industrial metal forge, highly efficient and capable of pressing one unit of piped liquid metal into two average sized ingots.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+        <texPath>Things/Building/Production/DeepchemRefinery</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,3)</drawSize>
+        <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+        </graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+        <costList>
+        <Steel>250</Steel>
+        <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+	<!--	<blueprintGraphicData>
+				<texPath>Things/Buildings/PlasteelForge/PlasteelForge_Blueprint</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>-->	
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+        <fillPercent>0.40</fillPercent>
+		<useHitPoints>True</useHitPoints>
+        <statBases>
+        <Mass>100</Mass>
+        <MaxHitPoints>250</MaxHitPoints>
+        <WorkToBuild>1000</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <size>(3,3)</size>
+        <designationCategory>VCHE_PipeNetworks</designationCategory>
+		<passability>Impassable</passability>
+        <pathCost>50</pathCost>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>5</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Building/Production/DeepchemRefinery</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<transfersIngredientLists>false</transfersIngredientLists>
+				<isMachineSpecifiesOutput>true</isMachineSpecifiesOutput>
+				<isAutoMachine>true</isAutoMachine>
+				<isAutoDropper>true</isAutoDropper>
+				<showFactoryProgressBar>true</showFactoryProgressBar>
+				<isMachinePausable>true</isMachinePausable>
+				<isCompletelyAutoMachine>true</isCompletelyAutoMachine>
+				<noPowerDestroysProgress>false</noPowerDestroysProgress>
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<chooseIngredientsIcon>UI/IP_SetOutput</chooseIngredientsIcon>
+				<InsertFirstItemDesc>IP_ChooseOutput</InsertFirstItemDesc>
+				<bringIngredientsText>VFEM_BringIngredients</bringIngredientsText>
+				<bringIngredientsDesc>VFEM_BringIngredientsDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/IP_Begin</bringIngredientsIcon>
+				<inputSlots>
+					<li>(0,0,0)</li>
+				</inputSlots>
+			</li>
+
+            <li Class="PipeSystem.CompProperties_RefillWithPipes">
+              <pipeNet>VCHEBroms_DeepSteelNet</pipeNet>
+              <thing>Steel</thing>
+            </li>
+            <li Class="PipeSystem.CompProperties_RefillWithPipes">
+              <pipeNet>VCHEBroms_DeepSilverNet</pipeNet>
+              <thing>Silver</thing>
+            </li>
+            <li Class="PipeSystem.CompProperties_RefillWithPipes">
+              <pipeNet>VCHEBroms_DeepGoldNet</pipeNet>
+              <thing>Gold</thing>
+            </li>
+            <li Class="PipeSystem.CompProperties_RefillWithPipes">
+              <pipeNet>VCHEBroms_DeepUraniumNet</pipeNet>
+              <thing>Uranium</thing>
+            </li>
+            <li Class="PipeSystem.CompProperties_RefillWithPipes">
+              <pipeNet>VCHEBroms_DeepPlasteelNet</pipeNet>
+              <thing>Plasteel</thing>
+            </li>
+
+            <li Class="VCHEBroms.CompProperties_Refinery" />
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites Inherit='False'>
+            <li>BiofuelRefining</li>
+            <li>DeepDrilling</li>
+		</researchPrerequisites>
+   		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VCHEBroms_MetalRefinery_Steel</defName>
+		<building>VCHEBroms_MetalRefinery</building>
+		<items>
+			<li>Steel</li>
+		</items>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>300</maxTotalOutput>
+		<amount>
+			<li>32</li>
+		</amount>
+		<result>Steel</result>	
+		<yield>75</yield>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.0834</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VCHEBroms_MetalRefinery_Silver</defName>
+		<building>VCHEBroms_MetalRefinery</building>
+		<items>
+			<li>Silver</li>
+		</items>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>300</maxTotalOutput>
+		<amount>
+			<li>32</li>
+		</amount>
+		<result>Silver</result>	
+		<yield>75</yield>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.0834</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VCHEBroms_MetalRefinery_Gold</defName>
+		<building>VCHEBroms_MetalRefinery</building>
+		<items>
+			<li>Gold</li>
+		</items>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>300</maxTotalOutput>
+		<amount>
+			<li>32</li>
+		</amount>
+		<result>Gold</result>	
+		<yield>75</yield>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.0834</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VCHEBroms_MetalRefinery_Uranium</defName>
+		<building>VCHEBroms_MetalRefinery</building>
+		<items>
+			<li>Uranium</li>
+		</items>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>300</maxTotalOutput>
+		<amount>
+			<li>32</li>
+		</amount>
+		<result>Uranium</result>	
+		<yield>75</yield>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.0834</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VCHEBroms_MetalRefinery_Plasteel</defName>
+		<building>VCHEBroms_MetalRefinery</building>
+		<items>
+			<li>Plasteel</li>
+		</items>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>300</maxTotalOutput>
+		<amount>
+			<li>32</li>
+		</amount>
+		<result>Plasteel</result>	
+		<yield>75</yield>		
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.0834</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+
+
+
+	
+
+</Defs>

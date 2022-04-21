@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+  <DesignatorDropdownGroupDef>
+      <defName>Broms_LiquidMetalPipesDeconstructDropdown</defName>
+  </DesignatorDropdownGroupDef> 
+
+  <PipeSystem.PipeNetDef>
+    <defName>VCHEBroms_DeepSteelNet</defName>
+    <resource>
+      <name>Steel</name>
+      <unit>l</unit>
+      <color>(105,105,105)</color>
+      <onlyShowStored>True</onlyShowStored>
+      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+    </resource>
+    <pipeDefs>
+      <li>VCHEBroms_DeepSteelPipe</li>
+    </pipeDefs>
+    <designator>
+      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
+      <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
+    </designator>
+    <overlayOptions>
+      <overlayColor>(105,105,105)</overlayColor>
+    </overlayOptions>
+  </PipeSystem.PipeNetDef>
+
+  <PipeSystem.PipeNetDef>
+    <defName>VCHEBroms_DeepSilverNet</defName>
+    <resource>
+      <name>Silver</name>
+      <unit>l</unit>
+      <color>(180,173,150)</color>
+      <onlyShowStored>True</onlyShowStored>
+      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+    </resource>
+    <pipeDefs>
+      <li>VCHEBroms_DeepSilverPipe</li>
+    </pipeDefs>
+    <designator>
+      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
+      <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
+    </designator>
+    <overlayOptions>
+      <overlayColor>(180,173,150)</overlayColor>
+    </overlayOptions>
+  </PipeSystem.PipeNetDef>
+
+  <PipeSystem.PipeNetDef>
+    <defName>VCHEBroms_DeepGoldNet</defName>
+    <resource>
+      <name>Gold</name>
+      <unit>l</unit>
+      <color>(255,235,122)</color>
+      <onlyShowStored>True</onlyShowStored>
+      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+    </resource>
+    <pipeDefs>
+      <li>VCHEBroms_DeepGoldPipe</li>
+    </pipeDefs>
+    <designator>
+      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
+      <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
+    </designator>
+    <overlayOptions>
+      <overlayColor>(180,173,150)</overlayColor>
+    </overlayOptions>
+  </PipeSystem.PipeNetDef>
+
+  <PipeSystem.PipeNetDef>
+    <defName>VCHEBroms_DeepUraniumNet</defName>
+    <resource>
+      <name>Uranium</name>
+      <unit>l</unit>
+      <color>(100,100,100)</color>
+      <onlyShowStored>True</onlyShowStored>
+      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+    </resource>
+    <pipeDefs>
+      <li>VCHEBroms_DeepUraniumPipe</li>
+    </pipeDefs>
+    <designator>
+      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
+      <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
+    </designator>
+    <overlayOptions>
+      <overlayColor>(180,173,150)</overlayColor>
+    </overlayOptions>
+  </PipeSystem.PipeNetDef>
+
+  <PipeSystem.PipeNetDef>
+    <defName>VCHEBroms_DeepPlasteelNet</defName>
+    <resource>
+      <name>Plasteel</name>
+      <unit>l</unit>
+      <color>(160,178,181)</color>
+      <onlyShowStored>True</onlyShowStored>
+      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+    </resource>
+    <pipeDefs>
+      <li>VCHEBroms_DeepPlasteelPipe</li>
+    </pipeDefs>
+    <designator>
+      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <designatorDropdown>Broms_LiquidMetalPipesDeconstructDropdown</designatorDropdown>
+      <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
+    </designator>
+    <overlayOptions>
+      <overlayColor>(180,173,150)</overlayColor>
+    </overlayOptions>
+  </PipeSystem.PipeNetDef>
+
+  <DesignatorDropdownGroupDef>
+      <defName>Broms_LiquidMetalPipesDropdown</defName>
+  </DesignatorDropdownGroupDef> 
+
+  <ThingDef Name="VCHEBroms_LiquidMetalPipe" ParentName="BuildingBase" Abstract="True">
+    <thingClass>PipeSystem.Building_Pipe</thingClass>
+    <category>Building</category>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>Things/Building/Linked/DeepchemPipes_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom8</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/DeepchemPipes_MenuIcon</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/DeepchemPipes_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>40</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>4</Steel>
+    </costList>
+    <placeWorkers>
+      <li>PipeSystem.PlaceWorker_Pipe</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <designatorDropdown>Broms_LiquidMetalPipesDropdown</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites>
+      <li>BiofuelRefining</li>
+      <li>DeepDrilling</li>
+    </researchPrerequisites>
+
+  </ThingDef>
+
+  <ThingDef ParentName="VCHEBroms_LiquidMetalPipe">
+    <defName>VCHEBroms_DeepSteelPipe</defName>
+    <label>liquid steel pipe</label>
+    <description>Heavy steel pipes for transporting liquid steel.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>VCHEBroms_DeepSteelNet</pipeNet>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="VCHEBroms_LiquidMetalPipe">
+    <defName>VCHEBroms_DeepSilverPipe</defName>
+    <label>liquid silver pipe</label>
+    <description>Heavy steel pipes for transporting liquid silver.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>VCHEBroms_DeepSilverNet</pipeNet>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="VCHEBroms_LiquidMetalPipe">
+    <defName>VCHEBroms_DeepGoldPipe</defName>
+    <label>liquid gold pipe</label>
+    <description>Heavy steel pipes for transporting liquid gold.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>VCHEBroms_DeepGoldNet</pipeNet>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="VCHEBroms_LiquidMetalPipe">
+    <defName>VCHEBroms_DeepUraniumPipe</defName>
+    <label>liquid uranium pipe</label>
+    <description>Heavy steel pipes for transporting liquid uranium.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>VCHEBroms_DeepUraniumNet</pipeNet>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="VCHEBroms_LiquidMetalPipe">
+    <defName>VCHEBroms_DeepPlasteelPipe</defName>
+    <label>liquid plasteel pipe</label>
+    <description>Heavy steel pipes for transporting liquid plasteel.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_Resource">
+        <pipeNet>VCHEBroms_DeepPlasteelNet</pipeNet>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  <ThingDef Name="Broms_LiquidMetalTankParent" ParentName="BuildingBase" Abstract="True">
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/DeepchemTank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <Steel>180</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>BiofuelRefining</li>
+      <li>DeepDrilling</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="Broms_LiquidMetalTankParent">
+    <defName>Broms_LiquidSteelTank</defName>
+    <label>liquid steel storage tank</label>
+    <description>A heavy industrial liquid steel storage tank.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepSteelNet</pipeNet>
+        <storageCapacity>1500</storageCapacity>
+        <barSize>(1.0, 0.25)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(0, 0, 0)</centerOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Broms_LiquidMetalTankParent">
+    <defName>Broms_LiquidSilverTank</defName>
+    <label>liquid silver storage tank</label>
+    <description>A heavy industrial liquid silver storage tank.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepSilverNet</pipeNet>
+        <storageCapacity>1500</storageCapacity>
+        <barSize>(1.0, 0.25)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(0, 0, 0)</centerOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Broms_LiquidMetalTankParent">
+    <defName>Broms_LiquidGoldTank</defName>
+    <label>liquid gold storage tank</label>
+    <description>A heavy industrial liquid gold storage tank.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepGoldNet</pipeNet>
+        <storageCapacity>1500</storageCapacity>
+        <barSize>(1.0, 0.25)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(0, 0, 0)</centerOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Broms_LiquidMetalTankParent">
+    <defName>Broms_LiquidUraniumTank</defName>
+    <label>liquid uranium storage tank</label>
+    <description>A heavy industrial liquid uranium storage tank.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepUraniumNet</pipeNet>
+        <storageCapacity>1500</storageCapacity>
+        <barSize>(1.0, 0.25)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(0, 0, 0)</centerOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="Broms_LiquidMetalTankParent">
+    <defName>Broms_LiquidPlasteelTank</defName>
+    <label>liquid plasteel storage tank</label>
+    <description>A heavy industrial liquid plasteel storage tank.</description>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepPlasteelNet</pipeNet>
+        <storageCapacity>1500</storageCapacity>
+        <barSize>(1.0, 0.25)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(0, 0, 0)</centerOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>VCHEBroms_Deepmetalexcavator</defName>
+    <label>deep metal excavator</label>
+    <description>A deep-crust drilling rig for extracting deep metal nodes. Is highly efficient and extracts resources in liquid form. Must be forged into ingots at a liquid metal forge. Can be repositioned freely.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Production/DeepchemPumpjack</texPath>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <size>(3,3)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>VCHE_PipeNetworks</designationCategory>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <uiIconPath>Things/Building/Production/DeepchemPumpjack_MenuIcon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <building>
+      <uninstallWork>1800</uninstallWork>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <placeWorkers>
+      <li>VCHEBroms.PlaceWorker_Pumpjack</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>BiofuelRefining</li>
+      <li>DeepDrilling</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-25</Beauty>
+      <Mass>70</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+      </li>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepSteelNet</pipeNet>
+        <storageCapacity>10</storageCapacity>
+        <drawStorageBar>false</drawStorageBar>
+        <addStorageInfo>false</addStorageInfo>
+        <addTransferGizmo>false</addTransferGizmo>
+      </li>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepSilverNet</pipeNet>
+        <storageCapacity>10</storageCapacity>
+        <drawStorageBar>false</drawStorageBar>
+        <addStorageInfo>false</addStorageInfo>
+        <addTransferGizmo>false</addTransferGizmo>
+      </li>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepGoldNet</pipeNet>
+        <storageCapacity>10</storageCapacity>
+        <drawStorageBar>false</drawStorageBar>
+        <addStorageInfo>false</addStorageInfo>
+        <addTransferGizmo>false</addTransferGizmo>
+      </li>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepUraniumNet</pipeNet>
+        <storageCapacity>10</storageCapacity>
+        <drawStorageBar>false</drawStorageBar>
+        <addStorageInfo>false</addStorageInfo>
+        <addTransferGizmo>false</addTransferGizmo>
+      </li>
+      <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHEBroms_DeepPlasteelNet</pipeNet>
+        <storageCapacity>10</storageCapacity>
+        <drawStorageBar>false</drawStorageBar>
+        <addStorageInfo>false</addStorageInfo>
+        <addTransferGizmo>false</addTransferGizmo>
+      </li>
+      <li Class="VCHEBroms.CompProperties_Pumpjack">
+        <ticksPerPortion>60</ticksPerPortion>
+        <resourcePerPortion>5</resourcePerPortion>
+        <ambientSound>VCHE_PumpjackAmbient</ambientSound>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
