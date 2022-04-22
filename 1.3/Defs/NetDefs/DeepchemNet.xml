@@ -62,7 +62,7 @@
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
-      <overlayColor>(180,173,150)</overlayColor>
+      <overlayColor>(255,235,122)</overlayColor>
     </overlayOptions>
   </PipeSystem.PipeNetDef>
 
@@ -83,7 +83,7 @@
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
-      <overlayColor>(180,173,150)</overlayColor>
+      <overlayColor>(100,100,100)</overlayColor>
     </overlayOptions>
   </PipeSystem.PipeNetDef>
 
@@ -104,7 +104,7 @@
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
-      <overlayColor>(180,173,150)</overlayColor>
+      <overlayColor>(160,178,181)</overlayColor>
     </overlayOptions>
   </PipeSystem.PipeNetDef>
 
@@ -232,37 +232,40 @@
   <ThingDef Name="Broms_LiquidMetalTankParent" ParentName="BuildingBase" Abstract="True">
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Production/DeepchemTank</texPath>
+      <!--<texPath>Things/Building/Production/DeepchemTank</texPath>-->
+      <texPath>Things/Building/Production/SteelTank</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
+	  <drawSize>(2,3)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <pathCost>50</pathCost>
     <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.40</fillPercent>
+    <fillPercent>0.5</fillPercent>
     <tickerType>Normal</tickerType>
     <statBases>
       <MaxHitPoints>180</MaxHitPoints>
       <WorkToBuild>800</WorkToBuild>
       <Mass>20</Mass>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
     </statBases>
-    <size>(2,2)</size>
+    <size>(2,3)</size>
     <costList>
-      <Steel>180</Steel>
+      <Steel>100</Steel>
     </costList>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <designationCategory>VCHE_PipeNetworks</designationCategory>
     <designatorDropdown>Broms_LiquidMetalTankDropdown</designatorDropdown>
-    <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <canOverlapZones>false</canOverlapZones>
     <researchPrerequisites>
