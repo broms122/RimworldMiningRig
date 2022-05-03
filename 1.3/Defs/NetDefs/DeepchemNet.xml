@@ -357,7 +357,7 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Things/Building/Production/DeepchemPumpjack</texPath>
+      <texPath>Things/Building/Production/BromsDrillBase</texPath>
       <drawSize>(3,3)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
@@ -370,7 +370,7 @@
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-    <uiIconPath>Things/Building/Production/DeepchemPumpjack_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Building/Production/BromsDrillBase_MenuIcon</uiIconPath>
     <uiIconScale>1</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>
     <building>

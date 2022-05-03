@@ -8,7 +8,7 @@
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
-        <texPath>Things/Building/Production/DeepchemRefinery</texPath>
+        <texPath>Things/Building/Production/BromsLiquidMetalForge</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>(3,3)</drawSize>
         <damageData>
@@ -73,7 +73,7 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
-				<buildingOnGraphic>Things/Building/Production/DeepchemRefinery</buildingOnGraphic>
+				<buildingOnGraphic>Things/Building/Production/BromsLiquidMetalForge</buildingOnGraphic>
 				<numberOfInputs>1</numberOfInputs>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<transfersIngredientLists>false</transfersIngredientLists>
