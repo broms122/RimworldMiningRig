@@ -447,7 +447,7 @@
       <li Class="VCHEBroms.CompProperties_Pumpjack">
         <ticksPerPortion>60</ticksPerPortion>
         <resourcePerPortion>5</resourcePerPortion>
-        <ambientSound>VCHE_PumpjackAmbient</ambientSound>
+        <ambientSound>Interact_Drill</ambientSound> <!-- previously VCHE_PumpjackAmbient -->
       </li>
     </comps>
   </ThingDef>

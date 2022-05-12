@@ -18,6 +18,7 @@ namespace VCHEBroms
     {
         private CompResourceProcessor resource;
         private Vector3 fireDrawPos;
+        //private Vector3 fireDrawPos2; //test
         public Building_ItemProcessor itemProcessor;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -35,7 +36,11 @@ namespace VCHEBroms
             fireDrawPos = parent.DrawPos;
             fireDrawPos.y += 3f / 74f;
             fireDrawPos.z += 1.25f;
-            
+
+            //fireDrawPos2 = parent.DrawPos; //test
+            //fireDrawPos2.y += -3f / 74f; //test
+            //fireDrawPos2.z += 1.25f; //test
+
         }
 
         public override void PostDraw()
@@ -43,6 +48,7 @@ namespace VCHEBroms
             if (itemProcessor.processorStage == ProcessorStage.Working)
             {
                 CompFireOverlay.FireGraphic.Draw(fireDrawPos, Rot4.North, parent);
+                //CompFireOverlay.FireGraphic.Draw(fireDrawPos2, Rot4.North, parent); //test
             }
         }
     }
