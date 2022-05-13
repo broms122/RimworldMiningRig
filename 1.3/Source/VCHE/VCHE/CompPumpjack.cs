@@ -23,8 +23,8 @@ namespace VCHEBroms
     [StaticConstructorOnStartup]
     public class CompPumpjack : ThingComp
     {
-        private static readonly Material PumpjackBottom = MaterialPool.MatFrom("Things/Building/Production/BromsDeepchemPumpjack_Bottom");
-        private static readonly Material PumpjackPump = MaterialPool.MatFrom("Things/Building/Production/BromsDeepchemPumpjack_Pump");
+        private static readonly Material PumpjackBottom = MaterialPool.MatFrom("Things/Building/Production/BromsLiquidSteelExcavator_Bottom");
+        private static readonly Material PumpjackPump = MaterialPool.MatFrom("Things/Building/Production/BromsLiquidSteelExcavator_Drill");
 
         private Vector3 pumpPos = Vector3.zero;
         private Vector3 pumpPosMax;

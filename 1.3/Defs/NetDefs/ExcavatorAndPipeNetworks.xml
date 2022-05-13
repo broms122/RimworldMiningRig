@@ -10,13 +10,13 @@
       <unit>l</unit>
       <color>(105,105,105)</color>
       <onlyShowStored>True</onlyShowStored>
-      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+      <offTexPath>UI/Gizmos/OutOfResources</offTexPath>
     </resource>
     <pipeDefs>
       <li>VCHEBroms_DeepSteelPipe</li>
     </pipeDefs>
     <designator>
-      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <deconstructIconPath>UI/Gizmos/LiquidMetalPipes_Deconstruct</deconstructIconPath>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -31,13 +31,13 @@
       <unit>l</unit>
       <color>(180,173,150)</color>
       <onlyShowStored>True</onlyShowStored>
-      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+      <offTexPath>UI/Gizmos/OutOfResources</offTexPath>
     </resource>
     <pipeDefs>
       <li>VCHEBroms_DeepSilverPipe</li>
     </pipeDefs>
     <designator>
-      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <deconstructIconPath>UI/Gizmos/LiquidMetalPipes_Deconstruct</deconstructIconPath>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -52,13 +52,13 @@
       <unit>l</unit>
       <color>(255,235,122)</color>
       <onlyShowStored>True</onlyShowStored>
-      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+      <offTexPath>UI/Gizmos/OutOfResources</offTexPath>
     </resource>
     <pipeDefs>
       <li>VCHEBroms_DeepGoldPipe</li>
     </pipeDefs>
     <designator>
-      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <deconstructIconPath>UI/Gizmos/LiquidMetalPipes_Deconstruct</deconstructIconPath>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -73,13 +73,13 @@
       <unit>l</unit>
       <color>(100,100,100)</color>
       <onlyShowStored>True</onlyShowStored>
-      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+      <offTexPath>UI/Gizmos/OutOfResources</offTexPath>
     </resource>
     <pipeDefs>
       <li>VCHEBroms_DeepUraniumPipe</li>
     </pipeDefs>
     <designator>
-      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <deconstructIconPath>UI/Gizmos/LiquidMetalPipes_Deconstruct</deconstructIconPath>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -94,13 +94,13 @@
       <unit>l</unit>
       <color>(160,178,181)</color>
       <onlyShowStored>True</onlyShowStored>
-      <offTexPath>UI/Gizmos/OutOfDeepchem</offTexPath>
+      <offTexPath>UI/Gizmos/OutOfResources</offTexPath>
     </resource>
     <pipeDefs>
       <li>VCHEBroms_DeepPlasteelPipe</li>
     </pipeDefs>
     <designator>
-      <deconstructIconPath>UI/Gizmos/DeepchemPipes_Deconstruct</deconstructIconPath>
+      <deconstructIconPath>UI/Gizmos/LiquidMetalPipes_Deconstruct</deconstructIconPath>
       <designationCategoryDef>VCHE_PipeNetworks</designationCategoryDef>
     </designator>
     <overlayOptions>
@@ -117,7 +117,7 @@
     <category>Building</category>
     <tickerType>Rare</tickerType>
     <graphicData>
-      <texPath>Things/Building/Linked/DeepchemPipes_Atlas</texPath>
+      <texPath>Things/Building/Linked/LiquidMetalPipes_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
@@ -127,14 +127,14 @@
         <rect>(0,0.35,1,0.3)</rect>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Linked/DeepchemPipes_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Building/Linked/LiquidMetalPipes_MenuIcon</uiIconPath>
     <uiIconScale>0.7</uiIconScale>
     <building>
       <ai_chillDestination>false</ai_chillDestination>
       <isInert>true</isInert>
       <isEdifice>false</isEdifice>
       <blueprintGraphicData>
-        <texPath>Things/Building/Linked/DeepchemPipes_Blueprint_Atlas</texPath>
+        <texPath>Things/Building/Linked/LiquidMetalPipes_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
     </building>
     <drawerType>MapMeshOnly</drawerType>

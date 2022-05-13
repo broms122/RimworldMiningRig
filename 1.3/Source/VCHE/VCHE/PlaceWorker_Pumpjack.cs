@@ -11,7 +11,7 @@ namespace VCHEBroms
         {
             bool canPlace = false;
             var cell = IntVec3.Invalid;
-            // Check if any cell is on top of deepchem
+            // Check if any cell is on top of deep resource node that isn't deepchem
             if (map.deepResourceGrid.ThingDefAt(loc) is ThingDef thingDef && thingDef.defName != "VCHE_Deepchem")
             {
                 canPlace = true;
